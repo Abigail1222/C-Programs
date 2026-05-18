@@ -1,51 +1,115 @@
-# Banking Queue Management System (C)
+# Legacy C Console Applications
 
-A console-based banking queue management system developed in C as an academic project.  
-The program simulates customer ticket generation and queue handling for different banking services using dynamic linked lists.
+This repository contains two console-based applications developed in C several years ago as academic/personal programming projects.
 
-## Features
+Both applications were originally built for Windows using `windows.h` console utilities and are preserved as part of my programming portfolio.
 
-- Ticket creation system
+---
+
+# Projects Included
+
+## 1. Banking Queue Management System
+
+A console application that simulates a banking ticket and queue management system using dynamic linked lists.
+
+### Features
+
+- Ticket generation system
 - Multiple queue categories:
   - Fast service queue
   - Standard service queue
   - Executive assistance queue
 - Queue visualization in console
-- Ticket removal and queue updates
-- Ticket service time tracking
-- Basic file logging (`turno.txt`)
-- Console-based bank terminal simulation
+- Ticket removal handling
+- Waiting time tracking
+- Basic file logging
+- Console-based banking terminal simulation
 
-## Technologies & Concepts
+### Concepts Used
+
+- Linked lists
+- Dynamic memory management
+- Queue logic
+- File handling
+- Structs and pointers
+- Console UI programming
+
+---
+
+## 2. Student/Personal Record Management Form System
+
+A console-based CRUD-style form management system designed to store and manage personal records.
+
+### Features
+
+- Record registration (`Alta`)
+- Record deletion (`Baja`)
+- Record modification (`Cambio`)
+- Record search (`Detecta`)
+- Full report generation
+- Alphabetical sorting
+- Validation system for user input
+- File persistence using `.txt` files
+
+### Stored Information
+
+- CURP
+- Full name
+- Address information
+- Birth date
+- Gender
+- Age
+- Tutor information
+
+### Concepts Used
+
+- Struct nesting
+- Data validation
+- File handling
+- CRUD operations
+- Sorting algorithms
+- Console interaction
+- Procedural programming in C
+
+---
+
+# Technologies
 
 - C Programming Language
+- Windows console libraries (`windows.h`)
 - Dynamic memory management
-- Linked lists
-- Pointers and structs
-- Console-based UI
-- File handling
-- Queue simulation logic
+- File I/O
+- Console-based interfaces
 
-## Project Structure
+---
+
+# Repository Structure
 
 ```txt
 .
-├── main.c
-├── turno.txt
+├── FORMULARIO PIA - COPY/
+│   ├── FORMULARIO PIA 1.3.c
+│   └── FORMULARIO PIA 1.3.exe
+│
+├── PIA EST/
+│   ├── PIA CON ARCHIVOS_1.c
+│   ├── PIA CON ARCHIVOS_1.exe
+│   
+│
 └── README.md
 ```
 
-## Platform Notes
+---
 
-This project was originally developed for Windows and relies on Windows-specific console libraries such as:
+# Platform Notes
+
+These projects were originally developed for Windows and use Windows-specific console functionality such as:
 
 ```c
 #include <windows.h>
 ```
 
-Because of this, the project may require modifications to compile and run on macOS or Linux systems.
-
-Some Windows-specific functions used include:
+Functions used include:
 
 - `SetConsoleCursorPosition`
 - `SetConsoleTextAttribute`
@@ -53,39 +117,43 @@ Some Windows-specific functions used include:
 - `getch()`
 - `itoa()`
 
-## Compilation (Windows)
+Because of this, additional modifications may be required to compile and run the projects on macOS or Linux systems.
 
-Using GCC / MinGW:
+---
 
-```bash
-gcc main.c -o banking_queue_system.exe
-```
+# Notes
 
-## Running the Program
+- Source code comments are primarily written in Spanish.
+- These projects are preserved mostly in their original state.
+- They represent some of my early experience working with low-level programming concepts in C.
 
-```bash
-./banking_queue_system.exe
-```
+---
 
-## Possible Future Improvements
+# Learning Outcomes
+
+Through these projects, I practiced:
+
+- Manual memory management
+- Dynamic data structures
+- Procedural software design
+- File persistence
+- Input validation
+- Console application development
+- Program organization in C
+
+---
+
+# Future Improvements
+
+Possible future updates include:
 
 - Cross-platform compatibility
-- Refactoring console UI
 - Safer input handling
-- Modular file structure
-- Persistent database storage
-- GUI implementation
+- Refactoring into modular architecture
+- Improved documentation
+- GUI implementations
+- Modern C standards compatibility
 
-## Learning Outcomes
+---
 
-This project helped me practice:
-
-- Manual memory management in C
-- Dynamic data structures
-- Queue handling logic
-- File operations
-- Console application development
-- Program organization and procedural design
-
-
-Academic project created several years ago and preserved as part of my programming portfolio.
+Academic/personal projects preserved as part of my software development portfolio.
